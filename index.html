@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guesser</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/skeleton/2.0.4/skeleton.css" /> -->
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body {
+        height: 100vh;
+        background: linear-gradient(to right,#7f53ac,#657ced);
+    }
+    .container {
+        position: absolute;
+        width: 50%;
+        min-width: 580px;
+        transform: translate(-50%,50%);
+        /* top: 10%; */
+        left: 50%;
+        background: #fff;
+        padding: 50px 10px;
+        border-radius: 5px;
+        display: grid;
+        justify-items: center;
+        font-family: 'poppins', sans-serif;
+    }
+    h3 {
+        font-size: 30px;
+        font-weight: 600;
+    }
+    p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 400;
+        text-align: center;
+    }
+    input[type="number"] {
+        width: 300px;
+        font-weight: 600;
+        padding: 20px 0;
+        font-size: 28px;
+        text-align: center;
+        margin-top: 30px;
+        border-radius: 5px;
+        border: 2px solid #202020;
+        color: #663399;
+    }
+    input[type="submit"] {
+        width: 160px;
+        font-weight: 200;
+        padding: 15px 0;
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 30px;
+        color: #fff;
+        border: none;
+        background-color: #663399;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <h3>Number Guesser</h3>
+        <div id="game">
+            <p>Guess a number between <span class="min-num">1</span> and <span class="max-num">10</span></p>
+            <input type="number" id="guess-input" placeholder="Enter your guess...">
+            <input type="submit" value="Submit" id="guess-btn">
+            <p class="message"></p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
